@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="488.0"
+      prefWidth="635.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="hust.client.Activity">
+    <children>
+        <Button fx:id="backBtn" layoutX="63.0" layoutY="385.0" mnemonicParsing="false" onAction="#back"
+                prefHeight="15.0" prefWidth="123.0" text="Back">
+            <font>
+                <Font name="Arial" size="19.0"/>
+            </font>
+        </Button>
+        <Button fx:id="forwardBtn" layoutX="63.0" layoutY="430.0" mnemonicParsing="false" onAction="#forward"
+                prefHeight="25.0" prefWidth="123.0" text="Dive Into">
+            <font>
+                <Font name="Arial" size="19.0"/>
+            </font>
+        </Button>
+        <Button fx:id="downloadBtn" layoutX="338.0" layoutY="430.0" mnemonicParsing="false" onAction="#download"
+                prefHeight="36.0" prefWidth="116.0" text="Download">
+            <font>
+                <Font name="Arial" size="19.0"/>
+            </font>
+        </Button>
+        <Button fx:id="uploadBtn" layoutX="338.0" layoutY="385.0" mnemonicParsing="false" onAction="#upload"
+                prefHeight="35.0" prefWidth="116.0" text="Upload">
+            <font>
+                <Font name="Arial" size="19.0"/>
+            </font>
+        </Button>
+        <Button fx:id="goToRootBtn" layoutX="197.0" layoutY="385.0" mnemonicParsing="false" onAction="#goToRoot"
+                prefHeight="36.0" prefWidth="131.0" text="Go -&gt; Root" wrapText="true">
+            <font>
+                <Font name="Arial" size="19.0"/>
+            </font>
+        </Button>
+        <Button fx:id="deleteBtn" layoutX="465.0" layoutY="430.0" mnemonicParsing="false" onAction="#delete"
+                prefHeight="35.0" prefWidth="116.0" text="Delete">
+            <font>
+                <Font name="Arial" size="19.0"/>
+            </font>
+        </Button>
+        <Button fx:id="updateBtn" layoutX="465.0" layoutY="385.0" mnemonicParsing="false" onAction="#update"
+                prefHeight="36.0" prefWidth="116.0" text="Update">
+            <font>
+                <Font name="Arial" size="19.0"/>
+            </font>
+        </Button>
+        <TableView fx:id="table" layoutX="63.0" layoutY="44.0" prefHeight="323.0" prefWidth="517.0">
+            <columns>
+
+            </columns>
+        </TableView>
+        <Label fx:id="directory" layoutX="65.0" layoutY="19.0" prefHeight="25.0" prefWidth="470.0" text="Directory">
+            <font>
+                <Font name="Arial" size="14.0"/>
+            </font>
+        </Label>
+        <Button fx:id="newFolderBtn" layoutX="197.0" layoutY="430.0" mnemonicParsing="false" onAction="#createFolder"
+                prefHeight="36.0" prefWidth="131.0" text="New Folder">
+            <font>
+                <Font name="Arial" size="19.0"/>
+            </font>
+        </Button>
+    </children>
+</Pane>
